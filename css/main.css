@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #252525;
+}
+
+.container h1 {
+  color: rgba(255, 255, 255);
+  text-align: center;
+  padding: 40px 0 0 0;
+  font-family: Courier New;
+}
+
+.kanban {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.kanban__column {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px 50px;
+}
+
+.kanban__column:nth-child(1) {
+  background-color: rgb(110, 110, 110, 0.6);
+}
+
+.kanban__column:nth-child(2) {
+  background-color: rgba(44, 24, 221, 0.3);
+}
+
+.kanban__column:nth-child(3) {
+  background-color: rgba(2, 175, 80, 0.6);
+}
+
+.kanban__column-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: white;
+  user-select: none;
+  text-align: center;
+}
+
+.kanban__item-input {
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.kanban__dropzone {
+  height: 10px;
+  transition: background 0.15s, height 0.15s;
+}
+
+.kanban__dropzone--active {
+  height: 20px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  background: rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .kanban {
+    width: 80%;
+  }
+}
